@@ -5,7 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Heigh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@400;700;900&family=Pangolin&family=Work+Sans:wght@400;500;600;700;800&display=swap');
 
+
+        * {
+            background-color: lightgrey;
+        }
+
+
+        .bat {
+            transition: transform 0.1s ease-in;
+        }
+
+        .ball {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(161, 26, 26);
+            position: relative;
+            left: 515px;
+            transition: transform 1s ease-out 0.15s;
+            box-shadow: 2px 2px 8px;
+            border: 2px dotted rgb(238, 109, 109);
+
+        }
+
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+
+        }
+
+        .field:hover .ball {
+            transform: translate(800px, -500px);
+        }
+
+        .title {
+            color: rgb(64, 64, 56);
+            font-family: 'Pangolin', cursive;
+            margin-top: 150px;
+            text-align: center;
+
+
+
+        }
+
+        .title:hover {
+            font-size: 100px;
+            color: rgb(59, 49, 49);
+        }
+    </style>
 </head>
 
 <body>
@@ -16,6 +66,7 @@
     </div>
 
     <h1 class="title">Click the Bat to hit the Ball</h1>
+
 
 </body>
 
